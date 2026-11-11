@@ -4,19 +4,19 @@ name: Protfolio website
 on: 
   push:
     branches:
-       -main 
+       - main 
 
 jobs:
   test:
    runs-on: ubuntu-latest 
 
    steps:
-    -name : Checkout action
-    uses: actions/checkout@v4 
+      - name: Checkout action
+        uses: actions/checkout@v4 
 
-    -name: check html file
-    run : test -f index.html 
+      - name: check html file
+        run: test -f index.html 
 
-    -name: Success message 
-    run: echo "Succesfully does the required action"
+      - name: Success message 
+        run: echo "Succesfully does the required action"
 
