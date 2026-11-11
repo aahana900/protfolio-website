@@ -8,15 +8,15 @@ on:
 
 jobs:
   test:
-   runs-on: ubantu-latest 
+   runs-on: ubuntu-latest 
 
    steps:
     -name : Checkout action
     uses: actions/checkout@v4 
 
     -name: check html file
-    uses: test -f index.html 
+    run : test -f index.html 
 
     -name: Success message 
-    uses: echo "Succesfully does the required action"
+    run: echo "Succesfully does the required action"
 
