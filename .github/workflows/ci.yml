@@ -17,6 +17,6 @@ jobs:
     -name: check html file
     uses: test -f index.html 
 
-    -name:Success message 
+    -name: Success message 
     uses: echo "Succesfully does the required action"
 
