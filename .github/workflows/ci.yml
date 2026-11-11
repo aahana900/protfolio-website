@@ -1,0 +1,22 @@
+
+name: Protfolio website 
+
+on: 
+  push:
+  branches:
+    -main 
+
+jobs:
+  test:
+   runs-on: ubantu-latest 
+
+   steps:
+    -name : Checkout action
+    uses: actions/checkout@v4 
+
+    -name: check html file
+    uses: test -f index.html 
+
+    -name:Success message 
+    uses: echo "Succesfully does the required action"
+
